@@ -1,0 +1,43 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+frontend-app/node_modules/
+
+# Build output
+dist/
+build/
+
+# Local data
+backend/data/documents/*
+backend/data/*.json
+
+# AI models / caches
+models/
+.cache/
+huggingface/
+*.bin
+*.safetensors
+*.onnx
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
