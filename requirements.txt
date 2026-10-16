@@ -1,0 +1,11 @@
+
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+numpy
+torch
+transformers
+safetensors
+PyMuPDF
+rapidocr-onnxruntime
