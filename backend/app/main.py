@@ -75,8 +75,12 @@ app = FastAPI(
 
 
 # =========================================================
+
 # CORS
-# =========================================================
+frontend_origin = os.getenv(
+    "FRONTEND_ORIGIN",
+    "https://localis-opal.vercel.app",
+).rstrip("/")
 
 app.add_middleware(
     CORSMiddleware,
@@ -85,11 +89,13 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "http://localhost:5174",
         "http://127.0.0.1:5174",
+        frontend_origin,
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 
 # =========================================================
